@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^10.4.2",
+    "@react-three/fiber": "^9.2.0",
+    "framer-motion": "^12.23.0",
+    "maath": "^0.10.8",
+    "react-router-dom": "^7.6.3",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.5.3"
+  }
+}

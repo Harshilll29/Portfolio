@@ -78,14 +78,14 @@ const Works = () => {
         and manage projects effectively.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap justify-center gap-7 sm:gap-10 gap-y-10">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
-    </>
-  );
-};
+      <div className="mt-20 flex flex-wrap justify-center gap-7 sm:gap-10 gap-y-14 sm:gap-y-10">
+         {projects.map((project, index) => (
+           <ProjectCard key={`project-${index}`} index={index} {...project} />
+         ))}
+       </div>
+     </>
+   );
+ };
 
 
 

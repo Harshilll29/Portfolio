@@ -10,13 +10,14 @@ const ExperienceCard = ({ experience, index }) => {
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
       className="relative"
     >
-      <div className="flex items-start mb-12 sm:mb-8">
-        {/* Timeline line and icon */}
-        <div className="flex flex-col items-center mr-6 sm:mr-8">
+      <div className="flex items-start mb-16 sm:mb-8">
+         {/* Timeline line and icon */}
+         <div className="flex flex-col items-center mr-6 sm:mr-8">
+
           <div 
             className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center shadow-lg border-2 border-white/20"
-            style={{ backgroundColor: experience.iconBg }}
-          >
+             style={{ backgroundColor: experience.iconBg }}
+           >
             <img 
               src={experience.icon} 
               alt={experience.company_name} 
@@ -25,7 +26,7 @@ const ExperienceCard = ({ experience, index }) => {
           </div>
           {/* Connecting line - only show if not last item */}
           {index !== experiences.length - 1 && (
-            <div className="w-1 h-20 sm:h-24 bg-gradient-to-b from-[#915eff] to-transparent mt-2"></div>
+            <div className="w-1 h-24 sm:h-28 bg-gradient-to-b from-[#915eff] to-transparent mt-3 sm:mt-2"></div>
           )}
         </div>
 

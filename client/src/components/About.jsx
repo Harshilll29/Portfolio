@@ -7,10 +7,10 @@ import SectionWrapper from "../hoc/SectionWrapper";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="w-[220px] h-[240px]">
+    <Tilt className="w-[220px] h-60">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full h-full bg-gradient-to-br from-[#1f1f1f] to-[#2d2d2d] p-[1px] rounded-2xl shadow-lg transition-transform hover:scale-105"
+        className="w-full h-full bg-linear-to-br from-[#1f1f1f] to-[#2d2d2d] p-px rounded-2xl shadow-lg transition-transform hover:scale-105"
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
@@ -42,7 +42,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-6 text-gray-300 text-[17px] max-w-3xl leading-[28px] text-center mx-auto"
+        className="mt-6 text-gray-300 text-[17px] max-w-3xl leading-7 text-center mx-auto"
       >
         I'm a passionate software developer with experience in JavaScript and
         expertise in frameworks like React, Node.js, and Express.js. I’m a

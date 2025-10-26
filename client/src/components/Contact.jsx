@@ -80,7 +80,7 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="w-full md:w-[700px] bg-gradient-to-br from-[#1f1f1f] to-[#2c2c2c] p-10 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-700"
+        className="w-full md:w-[700px] bg-linear-to-br from-[#1f1f1f] to-[#2c2c2c] p-10 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-700"
       >
         <p className={`${styles.sectionSubText} text-gradient`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText} text-white`}>Contact.</h3>
@@ -89,7 +89,7 @@ const Contact = () => {
         <div className="mt-8 mb-8 flex flex-col items-center">
           <button
             onClick={handleResumeDownload}
-            className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-blue-600 hover:to-green-500 py-4 px-10 outline-none text-white font-bold shadow-lg rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-3"
+            className="bg-linear-to-r from-green-500 to-blue-600 hover:from-blue-600 hover:to-green-500 py-4 px-10 outline-none text-white font-bold shadow-lg rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-3"
             style={{ padding: "1rem 2.5rem", margin: "0.5rem 0" }} // Extra padding and margin
           >
             <svg
@@ -163,7 +163,7 @@ const Contact = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-indigo-600 hover:to-purple-500 py-3 px-8 outline-none w-fit text-white font-bold shadow-lg rounded-xl transition-transform transform hover:scale-105"
+            className="bg-linear-to-r from-purple-500 to-indigo-600 hover:from-indigo-600 hover:to-purple-500 py-3 px-8 outline-none w-fit text-white font-bold shadow-lg rounded-xl transition-transform transform hover:scale-105"
             style={{ padding: "0.75rem 2rem", margin: "0.5rem 0" }} // Extra padding and margin
           >
             <span className="px-2 py-1">{loading ? "Sending..." : "Send"}</span>{" "}

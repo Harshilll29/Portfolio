@@ -22,9 +22,10 @@ const BallCanvas = ({icon}) => {
   return (
     <Canvas 
       frameloop="demand" 
-      gl={{preserveDrawingBuffer: true}}
-      style={{ margin: '20px' }} // Add margin to the canvas itself
-    >
+      gl={{ preserveDrawingBuffer: true, alpha: true }}
+    style={{ background: "transparent" }}
+    camera={{ fov: 45, position: [0, 0, 6] }}
+  >
       <Suspense fallback={<CanvasLoader/>}>
         <ambientLight intensity={3} />
         <directionalLight position={[10, 10, 5]} intensity={4} />

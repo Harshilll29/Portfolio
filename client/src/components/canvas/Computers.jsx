@@ -44,7 +44,8 @@ const ComputersCanvas = () => {
       frameloop="demand" 
       shadows 
       camera={{position: [20, 3, 5], fov: 25}} 
-      gl={{preserveDrawingBuffer: true}}
+      gl={{preserveDrawingBuffer: true, alpha: true}}
+      style={{ background: "transparent" }}
     >
       <Suspense fallback={<CanvasLoader/>}>
         {/* Very bright ambient light - illuminates everything evenly */}
